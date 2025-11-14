@@ -16,9 +16,9 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         http.csrf(csrf -> csrf.disable())
         //anything with /api/auth/ is public
-        .authorizeHttpRequests(auth -> auth.requestMatchers("/api/auth/**")
+        .authorizeHttpRequests(auth -> auth
         //anything else needs to have authentication to be visited
-        .permitAll().anyRequest().authenticated())
+        .requestMatchers("/api/auth/**").permitAll().anyRequest().authenticated())
         //Stateless for JWT (No data on server side)
         .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
