@@ -69,28 +69,18 @@ Language: Java
 
 Project Structure: 
 
-job-tracker/
-├── src/main/java/com/yourName/job_tracker/
-│   ├── controller/
-│   │   └── AuthController.java          # Authentication endpoints
-│   ├── service/
-│   │   └── AuthService.java             # Business logic for auth
-│   ├── repository/
-│   │   └── UserRepository.java          # Database access layer
-│   ├── model/
-│   │   └── User.java                    # User entity with UserDetails
-│   ├── dto/
-│   │   ├── RegisterRequest.java         # Registration data transfer
-│   │   ├── LoginRequest.java            # Login data transfer
-│   │   └── AuthResponse.java            # JWT response wrapper
-│   ├── security/
-│   │   ├── JwtUtil.java                 # JWT token generation/validation
-│   │   └── SecurityConfig.java          # Spring Security configuration
-│   ├── exception/
-│   │   └── BadRequestException.java     # Custom exception handling
-│   └── JobTrackerApplication.java       # Application entry point
-└── src/main/resources/
-    └── application.properties            # Configuration
+- AuthController.java -> Authentication endpoints
+- AuthService.java -> Business logic for auth
+- UserRepository.java -> Database access layer
+- User.java -> User entity with UserDetails
+- RegisterRequest.java -> Registration data transfer
+- LoginRequest.java -> Login data transfer
+- AuthResponse.java -> JWT response wrapper
+- JwtUtil.java -> JWT token generation/validation
+- SecurityConfig.java -> Spring Security configuration
+- BadRequestException.java -> Custom exception handling
+- JobTrackerApplication.java -> Application entry point
+- application.properties -> Configuration
 
 Security Implementation:
 
