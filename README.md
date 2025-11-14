@@ -7,6 +7,7 @@ Project Overview:
 This application provides a secure REST API for tracking job applications with user authentication and authorization. Built from scratch to showcase understanding of enterprise-level backend architecture, security principles, and database management.
 
 LinkedIn: https://www.linkedin.com/in/akshay-bodanapu/
+Email: akshaybod28@gmail.com
 
 Key Skills Demonstrated:
 
@@ -213,56 +214,5 @@ What This Project Demonstrates:
 - Database: ORM, entity modeling
 - Architecture: Three-layer pattern, dependency injection
 - Tools: Maven, Git, VS Code
-
-Setup & Installation:
-
-Prerequisites:
-
-- Java 17 or higher
-- Maven 3.6+
-- PostgreSQL/pgAdmin
-- Git
-
-Local Development Setup:
-
-# Clone the repository
-git clone https://github.com/Akshay-Bod28/JobTracker.git
-cd JobTracker
-
-# Configure database connection
-# Edit src/main/resources/application.properties with your database credentials
-
-# Build the project
-mvn clean install
-
-# Run the application
-mvn spring-boot:run
-
-# Application will start on http://localhost:8080
-Testing with Postman/cURL
-Register a new user:
-
-bashcurl -X POST http://localhost:8080/api/auth/register \
-  -H "Content-Type: application/json" \
-  -d '{
-    "username": "testuser",
-    "email": "test@example.com",
-    "password": "password123"
-  }'
-
-Login:
-
-bashcurl -X POST http://localhost:8080/api/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{
-    "username": "testuser",
-    "password": "password123"
-  }'
-
-📞 Contact & Links
-Developer: Akshay Bodanapu
-GitHub: @Akshay-Bod28
-LinkedIn: https://www.linkedin.com/in/akshay-bodanapu/
-Email: akshaybod28@gmail.com
 
 Last Updated: November 14 2025
